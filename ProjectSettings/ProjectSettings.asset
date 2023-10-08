@@ -707,7 +707,11 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;CF_FORCE_MOBILE_MODE
+    Standalone: CROSS_PLATFORM_INPUT
+    Windows Store Apps: MOBILE_INPUT;CF_FORCE_MOBILE_MODE
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT;CF_FORCE_MOBILE_MODE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
